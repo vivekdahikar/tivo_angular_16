@@ -1,0 +1,34 @@
+<div class="card total-growth">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600 header-text-primary">
+          Our Total Growth<i class="fa fa-circle"> </i>
+        </p>
+        <h4>96.564%</h4>
+      </div>
+    </div>
+    <div class="card-body pb-0">
+      <div class="growth-chart">
+        <div id="growth-chart">
+          <apx-chart
+            [series]="growthchart.series"
+            [chart]="growthchart.chart"
+            [stroke]="growthchart.stroke"
+            [annotations]="growthchart.annotations"
+            [colors]="growthchart.colors"
+            [yaxis]="growthchart.yaxis"
+            [xaxis]="growthchart.xaxis"
+            [legend]="growthchart.legend"
+            [tooltip]="growthchart.tooltip"
+            [dataLabels]="growthchart.dataLabels"
+            [grid]="growthchart.grid"
+            [responsive]="growthchart.responsive"
+            [fill]="growthchart.fill"
+          >
+          </apx-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

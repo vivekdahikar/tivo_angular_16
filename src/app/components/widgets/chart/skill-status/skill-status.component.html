@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header pb-0">
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <h4>Skill Status</h4>
+      </div>
+      <div class="text-end">
+        <i class="text-muted" data-feather="trending-up"></i>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="chart-container">
+      <div id="circlechart">
+        <apx-chart
+          [series]="statuschart.series"
+          [chart]="statuschart.chart"
+          [stroke]="statuschart.stroke"
+          [annotations]="statuschart.annotations"
+          [colors]="statuschart.colors"
+          [yaxis]="statuschart.yaxis"
+          [xaxis]="statuschart.xaxis"
+          [legend]="statuschart.legend"
+          [tooltip]="statuschart.tooltip"
+          [dataLabels]="statuschart.dataLabels"
+          [grid]="statuschart.grid"
+          [responsive]="statuschart.responsive"
+        >
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

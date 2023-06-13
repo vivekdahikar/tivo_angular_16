@@ -1,0 +1,125 @@
+<app-breadcrumb
+  [title]="'Video Chat'"
+  [items]="['Chat']"
+  [active_item]="'Video Chat'"
+></app-breadcrumb>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col call-chat-sidebar">
+      <div class="card">
+        <div class="card-body chat-body">
+          <div class="chat-box">
+            <app-users-chats></app-users-chats>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col call-chat-body">
+      <div class="card">
+        <div class="card-body p-0">
+          <div class="row chat-box">
+            <div class="col chat-right-aside">
+              <div class="chat">
+                <div class="d-flex chat-header clearfix align-items-center">
+                  <img
+                    class="rounded-circle"
+                    src="assets/images/user/8.jpg"
+                    alt=""
+                  />
+                  <div class="flex-grow-1">
+                    <div class="about">
+                      <a class="name"
+                        >Kori Thomas  <span class="font-primary f-12"
+                          >Typing...</span
+                        ></a
+                      >
+                      <div class="status digits">Last Seen 3:55 PM</div>
+                    </div>
+                  </div>
+                  <ul class="list-inline float-end chat-menu-icons">
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)">
+                        <i data-feather="search"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)">
+                        <i data-feather="paperclip"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)"
+                        ><i data-feather="headphones"></i
+                      ></a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="javascript:void(0)"
+                        ><i data-feather="video"></i
+                      ></a>
+                    </li>
+                    <li
+                      class="list-inline-item toogle-bar"
+                      (click)="openMenu()"
+                      (click)="openMenu()"
+                    >
+                      <a href="javascript:void(0)" (click)="openMenu()"
+                        ><i data-feather="menu"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="chat-history">
+                  <div class="row">
+                    <div class="col text-center pe-0 call-content">
+                      <div>
+                        <div class="total-time">
+                          <h2 class="digits">36 : 56</h2>
+                        </div>
+                        <div class="call-icons">
+                          <ul class="list-inline">
+                            <li class="list-inline-item">
+                              <a href="javascript:void(0)"
+                                ><i class="icon-video-camera"></i
+                              ></a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="javascript:void(0)"
+                                ><i class="icon-volume"></i
+                              ></a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a href="javascript:void(0)"
+                                ><i class="icon-user"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <button class="btn btn-success btn-block btn-lg">END CALL</button>
+                        <div class="receiver-img">
+                          <img
+                            src="assets/images/other-images/receiver-img.jpg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 caller-img-sec">
+                      <div class="caller-img" style="background-image: url('assets/images/other-images/caller.jpg'); background-size: cover; background-position: center center; display: block;">
+                        <img class="img-fluid bg-img-cover" src="assets/images/other-images/caller.jpg" alt="" style="display: none;">
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col ps-xl-0 chat-menu" [class.show]="show">
+                <app-chat-menu></app-chat-menu>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

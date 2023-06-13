@@ -1,0 +1,35 @@
+<div class="small-chart-widget chart-widgets-small">
+  <div class="card">
+    <div class="card-header pb-0">
+      <div class="d-flex">
+        <div class="flex-grow-1">
+          <h4>Turnover</h4>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="chart-container">
+        <div class="row">
+          <div class="col-12">
+            <div id="chart-widget7">
+              <apx-chart
+                [series]="turnover.series"
+                [chart]="turnover.chart"
+                [dataLabels]="turnover.dataLabels"
+                [stroke]="turnover.stroke"
+                [fill]="turnover.fill"
+                [title]="turnover.title"
+                [colors]="turnover.colors"
+                [labels]="turnover.labels"
+                [xaxis]="turnover.xaxis"
+                [yaxis]="turnover.yaxis"
+                [legend]="turnover.legend"
+              >
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

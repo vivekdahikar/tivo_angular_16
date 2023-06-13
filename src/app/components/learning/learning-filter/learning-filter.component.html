@@ -1,0 +1,26 @@
+<div class="job-sidebar md-sidebar">
+  <a
+    class="btn btn-primary md-sidebar-toggle"
+    href="javascript:void(0)"
+    (click)="openFilter()"
+    >learning filter</a
+  >
+  <div
+    class="md-sidebar-aside job-left-aside custom-scrollbar"
+    [class.open]="OpenFilter"
+  >
+    <div class="default-according style-1 job-accordion" id="accordionoc">
+      <div class="row">
+        <div class="col-xl-12">
+          <app-find-course></app-find-course>
+        </div>
+        <div class="col-xl-12">
+          <app-categories></app-categories>
+        </div>
+        <div class="col-xl-12">
+          <app-upcoming-course></app-upcoming-course>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

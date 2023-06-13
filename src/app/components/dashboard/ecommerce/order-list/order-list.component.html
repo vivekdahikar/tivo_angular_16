@@ -1,0 +1,48 @@
+<div class="card order-card">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600">
+          Our Total Sold<i class="fa fa-circle"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-body pt-0">
+    <div class="table-responsive theme-scrollbar">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th class="f-26">Order List</th>
+            <th>Status</th>
+            <th>Operator</th>
+            <th>Delivery Date</th>
+            <th>Delivery Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let title of orderList">
+            <td>
+              <div class="d-flex">
+                <div class="number-dot">
+                  <span class="f-w-700">{{ title.sr }}</span>
+                </div>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600">{{ title.id }}</span>
+                </div>
+              </div>
+            </td>
+            <td>
+              <span>{{ title.status }}</span>
+            </td>
+            <td>{{ title.name }}</td>
+            <td>{{ title.date }}</td>
+            <td>{{ title.adress }}</td>
+            <td>${{ title.price }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

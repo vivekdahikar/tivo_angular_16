@@ -1,0 +1,77 @@
+<app-breadcrumb
+  [title]="'General'"
+  [items]="['Widgets']"
+  [active_item]="'General'"
+></app-breadcrumb>
+
+<div class="container-fluid general-widget">
+  <div class="row">
+    <div class="col-sm-6 col-lg-3">
+      <app-earning [data]="earnings"></app-earning>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <app-earning [data]="products"></app-earning>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <app-earning [data]="messages"></app-earning>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <app-earning [data]="newUser"></app-earning>
+    </div>
+    <div class="col-xl-6 box-col-6">
+      <app-sale-detail></app-sale-detail>
+    </div>
+    <div class="col-xl-6 box-col-6">
+      <app-order-detail></app-order-detail>
+    </div>
+    <div class="col-xxl-6 col-xl-12 xl-100 col-sm-12 box-col-12">
+      <app-weather></app-weather>
+    </div>
+    <div class="col-xxl-3 col-xl-6 xl-50 col-md-6 box-col-6">
+      <app-date-picker></app-date-picker>
+    </div>
+    <div class="col-xxl-3 col-xl-6 xl-50 col-md-6 box-col-6">
+      <app-feedback></app-feedback>
+    </div>
+    <div class="col-xl-4 col-lg-6 col-md-12">
+      <app-manager></app-manager>
+    </div>
+    <div class="col-xl-4 col-md-6">
+      <app-recent-activity></app-recent-activity>
+    </div>
+    <div class="col-xl-4 col-md-6">
+      <app-recent-kelvin></app-recent-kelvin>
+    </div>
+    <div class="col-xl-6 col-lg-6 col-sm-12">
+      <app-browser></app-browser>
+    </div>
+    <div class="col-xl-6 col-lg-12">
+      <div class="row">
+        <div class="col-sm-6">
+          <app-social [data]="Facebook"></app-social>
+        </div>
+        <div class="col-sm-6">
+          <app-social [data]="Twitter"></app-social>
+        </div>
+        <div class="col-sm-6">
+          <app-social [data]="Linkedin"></app-social>
+        </div>
+        <div class="col-sm-6">
+          <app-social [data]="Instagram"></app-social>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-lg-6">
+      <app-product-cart></app-product-cart>
+    </div>
+    <div class="col-xl-6 col-lg-6">
+      <app-employee-status></app-employee-status>
+    </div>
+    <div class="col-sm-12 col-lg-6 col-xl-4 col-md-12 box-col-6 xl-50">
+      <app-card></app-card>
+    </div>
+    <div class="col-sm-12 col-lg-6 col-xl-8 col-md-12 box-col-6 xl-50">
+      <app-contact-us></app-contact-us>
+    </div>
+  </div>
+</div>

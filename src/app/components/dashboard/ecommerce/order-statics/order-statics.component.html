@@ -1,0 +1,56 @@
+<div class="card static-card">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600">
+          Order Statics<i class="fa fa-circle"> </i>
+        </p>
+        <h4>6,65,484 Order</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body pb-0 pt-0">
+    <div class="order-static">
+      <div id="order-chart">
+        <apx-chart
+          [series]="orderStatics.series"
+          [chart]="orderStatics.chart"
+          [stroke]="orderStatics.stroke"
+          [annotations]="orderStatics.annotations"
+          [colors]="orderStatics.colors"
+          [yaxis]="orderStatics.yaxis"
+          [xaxis]="orderStatics.xaxis"
+          [legend]="orderStatics.legend"
+          [tooltip]="orderStatics.tooltip"
+          [dataLabels]="orderStatics.dataLabels"
+          [grid]="orderStatics.grid"
+          [responsive]="orderStatics.responsive"
+          [fill]="orderStatics.fill"
+        >
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <ul class="d-xxl-flex d-block order-bottom">
+      <li class="d-flex">
+        <div class="flex-shrink-0">
+          <div><i class="fa fa-arrow-up"></i></div>
+        </div>
+        <div class="flex-grow-1">
+          <h6>84,315 order</h6>
+          <p class="f-w-500">Last two month order....</p>
+        </div>
+      </li>
+      <li class="d-flex">
+        <div class="flex-shrink-0">
+          <div><i class="fa fa-arrow-up"></i></div>
+        </div>
+        <div class="flex-grow-1">
+          <h6>61,481 order</h6>
+          <p class="f-w-500">Last two Days order....</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

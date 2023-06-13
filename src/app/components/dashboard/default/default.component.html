@@ -1,0 +1,43 @@
+<app-breadcrumb
+  [title]="'Default'"
+  [items]="['Dashboard']"
+  [active_item]="'Default'"
+></app-breadcrumb>
+
+<div class="container-fluid dashboard-default">
+  <div class="row">
+    <div class="col-xxl-6 col-xl-5 col-lg-6 dash-45 box-col-40">
+      <app-welcome></app-welcome>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-6 box-col-25">
+      <app-total-revenue></app-total-revenue>
+      <div class="card total-investment">
+        <app-total-investment></app-total-investment>
+      </div>
+    </div>
+    <div class="col-xxl-3 col-xl-4 col-md-6 dash-30 box-col-35">
+      <app-our-total-users></app-our-total-users>
+    </div>
+    <div class="col-xl-4 col-lg-6 box-col-30 xl-30">
+      <app-total-earning></app-total-earning>
+    </div>
+    <div class="col-xl-4 col-md-6 box-col-40 xl-40">
+      <app-total-appointment></app-total-appointment>
+    </div>
+    <div class="col-xl-4 col-md-6 box-col-30 xl-30">
+      <app-users-by-country></app-users-by-country>
+    </div>
+    <div class="col-xl-12 box-col-12">
+      <app-total-growth></app-total-growth>
+    </div>
+    <div class="col-xl-4 col-md-6 box-col-33">
+      <app-recent-activity></app-recent-activity>
+    </div>
+    <div class="col-xl-4 proorder box-col-33">
+      <app-chat-with-user></app-chat-with-user>
+    </div>
+    <div class="col-xl-4 col-md-6 box-col-33">
+      <app-to-do></app-to-do>
+    </div>
+  </div>
+</div>

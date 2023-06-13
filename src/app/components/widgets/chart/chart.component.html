@@ -1,0 +1,65 @@
+<app-breadcrumb
+  [title]="'Chart'"
+  [items]="['Widgets']"
+  [active_item]="'Chart'"
+></app-breadcrumb>
+
+<div class="container-fluid chart-widget">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 box-col-33">
+      <app-sale [data]="widget1"></app-sale>
+    </div>
+    <div class="col-lg-4 col-md-6 box-col-33">
+      <app-sale [data]="widget2"></app-sale>
+    </div>
+    <div class="col-lg-4 col-md-12 box-col-33">
+      <app-sale [data]="widget3"></app-sale>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-7 col-md-12 box-col-7">
+      <app-expense></app-expense>
+    </div>
+    <div class="col-lg-5 col-md-12 box-col-5">
+      <app-total-earning></app-total-earning>
+    </div>
+    <div class="col-lg-5 col-sm-12 box-col-5">
+      <app-skill-status></app-skill-status>
+    </div>
+    <div class="col-lg-7 box-col-7">
+      <app-order-status></app-order-status>
+    </div>
+
+    <div class="row">
+      <div class="xl-50 col-lg-7 box-col-7">
+        <app-live-product></app-live-product>
+      </div>
+
+      <div class="xl-50 col-lg-5 box-col-5">
+        <app-live-turnover></app-live-turnover>
+      </div>
+
+      <div class="xl-50 col-lg-5 box-col-5">
+        <app-monthly-sale></app-monthly-sale>
+      </div>
+
+      <div class="xl-50 col-lg-7 box-col-7">
+        <app-uses></app-uses>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 box-col-12">
+        <app-browser-uses></app-browser-uses>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 box-col-5">
+        <app-finance></app-finance>
+      </div>
+      <div class="col-lg-7 box-col-7">
+        <app-order-status2></app-order-status2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<app-breadcrumb [title]="'CK Editors'" [items]="['Editors']" [active_item]="'CK Editors'"></app-breadcrumb>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-header pb-0">
+          <h4>Ck Editor</h4>
+        </div>
+        <div class="card-body">
+          <ckeditor [editor]="editor" [config]="config" [data]="data"></ckeditor>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="card our-user">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600 header-text-primary">
+          Our Total Users<i class="fa fa-circle"></i>
+        </p>
+        <h4>96.564%</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="user-chart d-flex justify-content-center">
+      <div id="user-chart">
+        <apx-chart
+          [series]="userchart.series"
+          [chart]="userchart.chart"
+          [stroke]="userchart.stroke"
+          [annotations]="userchart.annotations"
+          [colors]="userchart.colors"
+          [yaxis]="userchart.yaxis"
+          [xaxis]="userchart.xaxis"
+          [legend]="userchart.legend"
+          [tooltip]="userchart.tooltip"
+          [dataLabels]="userchart.dataLabels"
+          [grid]="userchart.grid"
+          [responsive]="userchart.responsive"
+        >
+        </apx-chart>
+      </div>
+      <div class="icon-donut"><i data-feather="arrow-up-circle"></i></div>
+    </div>
+    <ul>
+      <li>
+        <p class="f-w-600 font-primary f-12">Desktop</p>
+        <span class="f-w-600">96.564%</span>
+      </li>
+      <li>
+        <p class="f-w-600 font-primary f-12">Mobile</p>
+        <span class="f-w-600">92.624%</span>
+      </li>
+      <li>
+        <p class="f-w-600 font-primary f-12">Tablet</p>
+        <span class="f-w-600">46.564%</span>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="card best-seller">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600">
+          Our Total Sold<i class="fa fa-circle"> </i>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="card-body pt-0">
+    <div class="table-responsive theme-scrollbar">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th class="f-26">Best Seller</th>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Country</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of Totalsold">
+            <td>
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img class="img-fluid" src="{{ item.img }}" alt="" />
+                </div>
+                <div class="flex-grow-1">
+                  <span class="f-14 f-w-600">
+                    <a href="/users/users-profile">{{ item.name }}</a></span
+                  >
+                  <p class="mb-0">{{ item.year }}</p>
+                </div>
+                <div class="active-status active-online"></div>
+              </div>
+            </td>
+            <td>{{ item.date }}</td>
+            <td>{{ item.product }}</td>
+            <td><i class="flag-icon flag-icon-gb"></i></td>
+            <td>
+              <span>{{ item.price }}</span>
+            </td>
+            <td><span>Success</span><i class="fa fa-check-circle f-14"></i></td>
+            <td>
+              <span> <a routerLink="/users/users-edit">Edit</a></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

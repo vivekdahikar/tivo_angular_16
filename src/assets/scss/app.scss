@@ -1,0 +1,39 @@
+//bootstrap
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+@import "./style.scss";
+@import "./themes/update";
+@import "../scss/vendors/font-awesome.scss";
+@import "../scss/vendors/feather-icon.scss";
+@import "../scss/vendors/feather-icon/feather-icon";
+@import "../scss/vendors/icofont.scss";
+@import "../scss/vendors/themify.scss";
+@import "../scss/vendors/whether-icon.scss";
+@import "../scss/vendors/animate.scss";
+
+//sweetalert
+@import "node_modules/sweetalert2/src/sweetalert2.scss";
+
+// calendar
+@import "node_modules/angular-calendar/css/angular-calendar.css";
+
+//toaster
+@import "ngx-toastr/toastr";
+
+@import "/node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss";
+@import "/node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel.scss";
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default.scss";
+
+@import "node_modules/ngx-bar-rating/themes/br-horizontal-theme";
+@import "node_modules/ngx-bar-rating/themes/br-vertical-theme";
+@import "node_modules/ngx-bar-rating/themes/br-default-theme";
+@import "node_modules/ngx-bar-rating/themes/br-stars-theme";
+@import "node_modules/ngx-bar-rating/themes/br-movie-theme";
+@import "node_modules/ngx-bar-rating/themes/br-square-theme";
+
+/* Leaflet Map */
+@import "/node_modules/leaflet/dist/leaflet.css";
+
+@import "node_modules/@danielmoncada/angular-datetime-picker/assets/style/picker.min.css";

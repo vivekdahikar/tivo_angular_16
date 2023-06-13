@@ -1,0 +1,50 @@
+<div class="card goal-view">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600">
+          Our Goal Overview<i class="fa fa-circle"> </i>
+        </p>
+        <h4>Goal Overview</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="goal-chart">
+      <div class="shap-block">
+        <div class="rounded-shap animate-bg-secondary">
+          <i></i><i></i><i></i>
+        </div>
+      </div>
+      <div id="goal d-flex justify-content-center">
+        <apx-chart
+          [chart]="goalchart.chart"
+          [plotOptions]="goalchart.plotOptions"
+          [fill]="goalchart.fill"
+          [stroke]="goalchart.stroke"
+          [responsive]="goalchart.responsive"
+          [labels]="goalchart.labels"
+          [series]="goalchart.series"
+          [colors]="goalchart.colors"
+        >
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    <ul>
+      <li>
+        <h4 class="f-w-700">$8,54,159</h4>
+        <span class="f-w-500">Completed</span>
+      </li>
+      <li>
+        <h4 class="f-w-700">$9,85,000</h4>
+        <span class="f-w-500">Our Goal</span>
+      </li>
+      <li>
+        <h4 class="f-w-700">$66,264</h4>
+        <span class="f-w-500">In Progress</span>
+      </li>
+    </ul>
+  </div>
+</div>

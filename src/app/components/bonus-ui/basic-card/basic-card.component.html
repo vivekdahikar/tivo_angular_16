@@ -1,0 +1,67 @@
+<app-breadcrumb
+  [title]="'Basic cards'"
+  [items]="['Bonus UI']"
+  [active_item]="'Basic cards'"
+></app-breadcrumb>
+<div class="container-fluid basic-cards">
+  <div class="row">
+    <div class="col-xl-6 col-sm-6">
+      <div class="card">
+        <div class="card-header pb-0">
+          <h4>Simple Cards</h4>
+          <span>Example of Sample basic card</span>
+        </div>
+        <div class="card-body">
+          <p class="mb-0">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled. Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled.
+          </p>
+        </div>
+        <div class="card-footer">
+          <h5 class="mb-0">Card Footer</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-sm-6">
+      <div class="card">
+        <div class="card-header bg-primary pb-0">
+          <h4 class="text-white">Primary Card</h4>
+          <span class="text-white"
+            >Example of color card add .bg-primary, .bg-* to create any color
+            card.
+          </span>
+        </div>
+        <div class="card-body bg-primary">
+          <p class="mb-0">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled. Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a
+            galley of type and scrambled.
+          </p>
+        </div>
+        <div class="card-footer bg-primary border-top">
+          <h5 class="mb-0">Card Footer</h5>
+        </div>
+      </div>
+    </div>
+    <h4>Card with border</h4>
+    <app-card-with-border></app-card-with-border>
+
+    <h4>Card with Tab</h4>
+    <app-card-with-tab></app-card-with-tab>
+    <h4>Profile cards</h4>
+    <app-profile-card></app-profile-card>
+    <h4>Horizontal Card</h4>
+    <app-horizontal-card></app-horizontal-card>
+    <h4>Blog Cards</h4>
+    <app-blog-cards></app-blog-cards>
+  </div>
+</div>

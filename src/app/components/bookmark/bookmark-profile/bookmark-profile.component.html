@@ -1,0 +1,119 @@
+<div class="md-sidebar email-sidebar">
+  <a
+    class="btn btn-primary md-sidebar-toggle"
+    (click)="openMenu()"
+    href="javascript:void(0)"
+    >Bookmark filter</a
+  >
+  <div class="md-sidebar-aside email-left-aside" [class.open]="open">
+    <div class="card">
+      <div class="card-body">
+        <div class="email-app-sidebar left-bookmark">
+          <div class="d-flex">
+            <div class="flex-shrink-0">
+              <img
+                class="me-3 rounded-circle"
+                src="assets/images/user/user.png"
+                alt=""
+              />
+            </div>
+            <div class="flex-grow-1">
+              <a href="/users/users-profile"><h6 class="f-w-600">MARK JENCO</h6></a>
+              <p>Markjecno@gmail.com</p>
+            </div>
+          </div>
+          <ul class="nav main-menu" role="tablist">
+            <li class="nav-item">
+              <button
+                class="btn-primary btn-block btn-mail"
+                type="button"
+                (click)="openAddBookmark()"
+              >
+                <i class="me-2" data-feather="bookmark"></i> New Bookmark
+              </button>
+            </li>
+            <li class="nav-item"><span class="main-title"> Views</span></li>
+            <li>
+              <a
+                id="pills-created-tab"
+                data-bs-toggle="pill"
+                href="#pills-created"
+                role="tab"
+                aria-controls="pills-created"
+                aria-selected="true"
+                ><span class="title"> Created by me</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="show"
+                id="pills-favourites-tab"
+                data-bs-toggle="pill"
+                role="tab"
+                aria-controls="pills-favourites"
+                aria-selected="false"
+                ><span class="title"> Favourites</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="show"
+                id="pills-shared-tab"
+                data-bs-toggle="pill"
+                role="tab"
+                aria-controls="pills-shared"
+                aria-selected="false"
+                ><span class="title"> Shared with me</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="show"
+                id="pills-bookmark-tab"
+                data-bs-toggle="pill"
+                role="tab"
+                aria-controls="pills-bookmark"
+                aria-selected="false"
+                ><span class="title"> My bookmark</span></a
+              >
+            </li>
+            <li>
+              <hr />
+            </li>
+            <li>
+              <span class="main-title">
+                Tags<span class="pull-right"
+                  ><a (click)="openTagModel()"
+                    ><app-feather-icons
+                      [icon]="'plus-circle'"
+                    ></app-feather-icons></a></span
+              ></span>
+            </li>
+            <li>
+              <a
+                class="show"
+                id="pills-notification-tab"
+                data-bs-toggle="pill"
+                role="tab"
+                aria-controls="pills-notification"
+                aria-selected="false"
+                ><span class="title"> Notification</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="show"
+                id="pills-newsletter-tab"
+                data-bs-toggle="pill"
+                role="tab"
+                aria-controls="pills-newsletter"
+                aria-selected="false"
+                ><span class="title"> Newsletter</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

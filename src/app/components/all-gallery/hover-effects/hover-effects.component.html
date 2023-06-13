@@ -1,0 +1,29 @@
+<app-breadcrumb [title]="'Hover effect'" [items]="['Gallery']" [active_item]="'Hover effect'"></app-breadcrumb>
+<div class="container-fluid">
+  <div class="row">
+    <ng-container *ngFor="let data of hover">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header pb-0">
+            <h4>
+              Hover Effect <span>{{ data.hoverDigits }}</span>
+            </h4>
+          </div>
+          <div class="card-body" id="aniimated-thumbnials">
+            <div class="row my-gallery gallery" itemscope="">
+              <section>
+                <div class="row" gallerize>
+                  <figure class="col-md-3 col-6 mx-0 mb-4 img-hover {{ data.hoverClass }}" *ngFor="let img of imageData">
+                    <div>
+                      <img [src]="img.srcUrl" />
+                    </div>
+                  </figure>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<app-breadcrumb
+  [title]="'payment details'"
+  [items]="['E - Commerce']"
+  [active_item]="'payment details'"
+></app-breadcrumb>
+
+<div class="container-fluid credit-card payment-details">
+  <div class="row">
+    <div class="col-xl-8 box-col-80">
+      <app-credit-card></app-credit-card>
+    </div>
+    <div class="col-xl-4 col-lg-6 box-col-33 debit-card">
+      <app-debit-card></app-debit-card>
+    </div>
+    <!-- Debit Card Ends-->
+    <!-- COD Starts-->
+    <div class="col-xl-4 col-lg-6 box-col-33">
+      <app-cod></app-cod>
+    </div>
+    <!-- COD Ends-->
+    <!-- EMI Starts-->
+    <div class="col-xl-4 col-lg-6 box-col-33">
+      <app-emi></app-emi>
+    </div>
+    <!-- EMI Ends-->
+    <!-- EMI Starts-->
+    <div class="col-xl-4 col-lg-6 box-col-33">
+      <app-net-banking></app-net-banking>
+    </div>
+    <!-- EMI Ends-->
+  </div>
+</div>

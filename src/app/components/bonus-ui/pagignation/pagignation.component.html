@@ -1,0 +1,58 @@
+<app-breadcrumb
+  [title]="'Pagination'"
+  [items]="['Bonus Ui']"
+  [active_item]="'Pagination'"
+></app-breadcrumb>
+<div class="container-fluid pagination-page">
+  <div class="row">
+    <!-- simple pagination-->
+    <div class="col-xxl-4 col-md-6">
+      <div class="card">
+        <div class="card-header pb-0">
+          <h4>Pagination</h4>
+        </div>
+        <div class="card-body">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-primary">
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)">Previous</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="javascript:void(0)">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- pagination with icons-->
+    <div class="col-xxl-4 col-md-6">
+      <app-pagination-icons></app-pagination-icons>
+    </div>
+    <!-- pagination with active and disabled state-->
+    <div class="col-xxl-4">
+      <app-pagination-active-disabled></app-pagination-active-disabled>
+    </div>
+    <!-- pagination alignment left-->
+    <div class="col-xl-6">
+      <app-pagination-alignment></app-pagination-alignment>
+    </div>
+    <!-- pagination sizing-->
+    <div class="col-xl-6">
+      <app-pagination-sizing></app-pagination-sizing>
+    </div>
+    <!-- pagination Color-->
+    <div class="col-xl-12">
+      <app-pagination-color></app-pagination-color>
+    </div>
+  </div>
+</div>

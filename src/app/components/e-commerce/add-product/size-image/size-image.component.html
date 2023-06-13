@@ -1,0 +1,73 @@
+<div class="card">
+  <div class="card-body">
+    <div class="product-info">
+      <h5>Product Image</h5>
+      <form class="dropzone" id="singleFileUpload" action="/upload.php">
+        <ngx-dropzone (change)="onSelect2($event)" [multiple]="true">
+          <ngx-dropzone-label>
+            <div>
+              <div class="dz-message needsclick">
+                <i class="icon-cloud-up"></i>
+                <h6>Drop files here or click to upload.</h6>
+                <span class="dz-message needsclick"
+                  >(This is just a demo dropzone. Selected files are
+                  <strong>not</strong> actually uploaded.)</span
+                >
+              </div>
+            </div>
+          </ngx-dropzone-label>
+          <ngx-dropzone-preview
+            *ngFor="let f of files2"
+            [removable]="true"
+            (removed)="onRemove2(f)"
+          >
+            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+          </ngx-dropzone-preview>
+        </ngx-dropzone>
+      </form>
+      <h5 class="mt-4">Select Size</h5>
+
+      <form>
+        <div class="product-group">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">Size</label>
+                <select class="form-select">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>XXL</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">Date</label>
+                <input class="form-control" type="date" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="mb-3">
+                <label class="form-label">Price</label>
+                <input class="form-control" type="number" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="mt-4">
+      <div class="row">
+        <div class="col-sm-12 text-end">
+          <a class="btn btn-primary me-3" routerLink="/e-commerce/product"
+            >ADD </a
+          ><a class="btn btn-secondary">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

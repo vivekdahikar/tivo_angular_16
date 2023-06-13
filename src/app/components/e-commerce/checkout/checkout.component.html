@@ -1,0 +1,23 @@
+<app-breadcrumb
+  [title]="'Checkout'"
+  [items]="['E-Commerce']"
+  [active_item]="'Checkout'"
+></app-breadcrumb>
+
+<div class="container-fluid checkout">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h4>Billing Details</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <app-billing-details></app-billing-details>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <app-place-order> </app-place-order>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

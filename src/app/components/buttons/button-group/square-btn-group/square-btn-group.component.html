@@ -1,0 +1,23 @@
+<ng-container *ngFor="let button of groupBtn">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header pb-0">
+        <h4>{{ button.title }}</h4>
+      </div>
+      <div class="card-body btn-group-showcase">
+        <div class="row">
+          <ng-container *ngFor="let btn of button.btnGroup">
+            <div class="col-xxl-4 col-md-6 col-sm-12">
+              <div class="btn-group {{ button.btnClass }}" role="group" aria-label="Basic example"
+                *ngFor="let b of btn.btnClass">
+                <button class="btn btn-{{ b }}" type="button">Left</button>
+                <button class="btn btn-{{ b }}" type="button">Middle</button>
+                <button class="btn btn-{{ b }}" type="button">Right</button>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>

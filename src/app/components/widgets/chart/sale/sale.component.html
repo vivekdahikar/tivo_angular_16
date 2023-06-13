@@ -1,0 +1,39 @@
+<div class="card o-hidden">
+  <div class="chart-widget-top">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-5">
+          <h6 class="f-w-600 font-{{ data.titleColor }}">
+            {{ data.chartTitle }}
+          </h6>
+          <span class="num"><span class="counter">{{ data.price }}</span>%<i class="icon-angle-up f-12 ms-1"></i></span>
+        </div>
+        <div class="col-7 text-end">
+          <h4 class="num total-value">{{ data.counter }}</h4>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="chart-widget1">
+        <apx-chart
+          [series]="data.series"
+          [chart]="data.chart"
+          [stroke]="data.stroke"
+          [annotations]="data.annotations"
+          [colors]="data.colors"
+          [yaxis]="data.yaxis"
+          [xaxis]="data.xaxis"
+          [legend]="data.legend"
+          [tooltip]="data.tooltip"
+          [dataLabels]="data.dataLabels"
+          [grid]="data.grid"
+          [labels]="data.labels"
+          [responsive]="data.responsive"
+          [plotOptions]="data.plotOption"
+          [states]="data.states"
+          [fill]="data.fill">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

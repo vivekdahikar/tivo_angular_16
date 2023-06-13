@@ -1,0 +1,11 @@
+<app-breadcrumb [title]="'KolKov Editors'" [items]="['Editors']" [active_item]="'KolKov Editors'"></app-breadcrumb>
+<div class="col-sm-12">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h4>KolKov Editor</h4>
+    </div>
+    <div class="card-body">
+      <angular-editor [placeholder]="'Enter text here...'" [(ngModel)]="htmlContent"></angular-editor>
+    </div>
+  </div>
+</div>

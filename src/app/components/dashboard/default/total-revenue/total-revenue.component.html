@@ -1,0 +1,31 @@
+<div class="card total-revenue overflow-hidden">
+  <div class="card-header">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600 header-text-primary">
+          Total Revenue<i class="fa fa-circle"></i>
+        </p>
+        <h4>96.564%</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body p-0">
+    <div class="revenue-chart" id="revenue-chart">
+      <apx-chart
+        [series]="revenuchart.series"
+        [chart]="revenuchart.chart"
+        [stroke]="revenuchart.stroke"
+        [annotations]="revenuchart.annotations"
+        [colors]="revenuchart.colors"
+        [yaxis]="revenuchart.yaxis"
+        [xaxis]="revenuchart.xaxis"
+        [legend]="revenuchart.legend"
+        [tooltip]="revenuchart.tooltip"
+        [dataLabels]="revenuchart.dataLabels"
+        [grid]="revenuchart.grid"
+        [responsive]="revenuchart.responsive"
+      >
+      </apx-chart>
+    </div>
+  </div>
+</div>

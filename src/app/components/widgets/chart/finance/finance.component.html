@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-header pb-0">
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <h4>Finance</h4>
+      </div>
+      <div class="text-end">
+        <i class="text-muted" data-feather="navigation"></i>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="chart-container">
+      <div id="columnchart">
+        <apx-chart
+          [chart]="widget11.chart"
+          [dataLabels]="widget11.dataLabels"
+          [stroke]="widget11.stroke"
+          [series]="widget11.series"
+          [title]="widget11.title"
+          [subtitle]="widget11.subtitle"
+          [xaxis]="widget11.xaxis"
+          [yaxis]="widget11.yaxis"
+          [colors]="widget11.colors"
+          [fill]="widget11.fill">
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

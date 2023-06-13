@@ -1,0 +1,17 @@
+<div class="row">
+  <ng-container *ngFor="let faq of FaqTopPart">
+    <div class="col-xl-4 {{ faq.colClass }}">
+      <div class="card bg-primary">
+        <div class="card-body">
+          <div class="d-flex faq-widgets">
+            <div class="flex-grow-1">
+              <h4>{{ faq.title }}</h4>
+              <p class="mb-0">{{ faq.dace }}</p>
+            </div>
+            <app-feather-icons [icon]="faq.icon"></app-feather-icons>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

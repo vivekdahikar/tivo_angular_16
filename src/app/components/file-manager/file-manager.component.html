@@ -1,0 +1,16 @@
+<app-breadcrumb
+  [title]="'File Manager'"
+  [items]="['Apps']"
+  [active_item]="'File Manager'"
+></app-breadcrumb>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xl-3 box-col-30">
+      <app-file-manager-sidebar></app-file-manager-sidebar>
+    </div>
+    <div class="col-xl-9 col-md-12 box-col-70">
+      <app-file-items></app-file-items>
+    </div>
+  </div>
+</div>

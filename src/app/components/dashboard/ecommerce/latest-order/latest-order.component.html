@@ -1,0 +1,28 @@
+<div class="card product-slider">
+  <div class="card-header pb-0">
+    <div class="d-flex justify-content-between">
+      <div class="flex-grow-1">
+        <p class="square-after f-w-600">
+          Latest Offer Product<i class="fa fa-circle"> </i>
+        </p>
+        <h4>-60% Offer</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template *ngFor="let item of products" carouselSlide>
+        <div class="item">
+          <img class="img-fluid" src="{{ item.image }}" alt="" />
+          <div class="product-content">
+            <div class="badge badge-primary">New</div>
+            <h4>
+              <a href="/e-commerce/product">{{ item.name }}</a><i class="fa fa-check-circle"></i>
+            </h4>
+            <h5 class="f-16">$120.00</h5>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>

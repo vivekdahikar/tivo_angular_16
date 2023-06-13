@@ -1,0 +1,34 @@
+<div class="card o-hidden">
+  <div class="card-header pb-0">
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <h4>Marketing Expenses</h4>
+      </div>
+    </div>
+  </div>
+  <div class="bar-chart-widget">
+    <div class="bottom-content card-body">
+      <div class="row">
+        <div class="col-12">
+          <div id="chart-widget4">
+            <apx-chart
+              [series]="expensechart.series"
+              [chart]="expensechart.chart"
+              [stroke]="expensechart.stroke"
+              [annotations]="expensechart.annotations"
+              [colors]="expensechart.colors"
+              [yaxis]="expensechart.yaxis"
+              [xaxis]="expensechart.xaxis"
+              [legend]="expensechart.legend"
+              [tooltip]="expensechart.tooltip"
+              [dataLabels]="expensechart.dataLabels"
+              [grid]="expensechart.grid"
+              [responsive]="expensechart.responsive"
+              [fill]="expensechart.fill">
+            </apx-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<div class="card employee-status">
+  <div class="card-header pb-0">
+    <div class="d-flex">
+      <div class="flex-grow-1">
+        <h4>Employee Status</h4>
+      </div>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive theme-scrollbar">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Skill Level</th>
+            <th scope="col">Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of employeeStatusData">
+            <td>
+              <div class="d-flex">
+                <img src="{{ data.employeeProfileImg }}" alt="" />
+                <div class="flex-grow-1">
+                  <h5>
+                    <a href="/users/users-cards"> {{ data.name }} </a
+                    ><span class="text-muted">{{ data.sub }}</span>
+                  </h5>
+                </div>
+              </div>
+            </td>
+            <td>{{ data.designation }}</td>
+            <td>
+              <div class="progress-showcase">
+                <div class="progress" style="height: 8px">
+                  <div
+                    class="progress-bar bg-{{ data.levelColor }}"
+                    role="progressbar"
+                    [ngStyle]="{ width: data.skillLevel }"
+                    style="width: 30%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </td>
+            <td>{{ data.experience }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

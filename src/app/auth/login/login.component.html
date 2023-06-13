@@ -1,0 +1,131 @@
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col-12 p-0">
+      <div class="login-card">
+        <div>
+          <div>
+            <a class="logo"
+              ><img
+                class="img-fluid for-light"
+                src="assets/images/logo/logo.png"
+                alt="logo image"
+            /></a>
+          </div>
+          <div class="login-main">
+            <form class="theme-form" [formGroup]="loginForm">
+              <h2 class="text-center">Sign in to account</h2>
+              <p class="text-center">Enter your email & password to login</p>
+
+              <div class="form-group">
+                <label class="col-form-label">Email Address</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="app@yourmail.com"
+                    formControlName="email"
+                  />
+                  <div
+                    *ngIf="loginForm.controls['email'].touched && loginForm.controls['email'].errors?.['required']"
+                    class="text text-danger mt-1"
+                  >
+                    Email is required
+                  </div>
+                  <div
+                    *ngIf="loginForm.controls['email'].touched && loginForm.controls['email'].errors?.['email']"
+                    class="text text-danger mt-1"
+                  >
+                    Invalid Email
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-form-label">Password</label>
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    [type]="show ? 'text' : 'password'"
+                    formControlName="password"
+                    required=""
+                    placeholder="*********"
+                  />
+                  <div class="show-hide" (click)="showPassword()" *ngIf="!show">
+                    <span class="show"></span>
+                  </div>
+                  <div class="show-hide" (click)="showPassword()" *ngIf="show">
+                    <span class="Hide"></span>
+                  </div>
+                  <div
+                    *ngIf="loginForm.controls['password'].touched && loginForm.controls['password'].errors?.['required']"
+                    class="text text-danger mt-1"
+                  >
+                    Password is required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="checkbox ms-1">
+                  <input id="checkbox1" type="checkbox" />
+                  <label for="checkbox1">Remember password</label>
+                </div>
+                <a class="link" [routerLink]="'/authentication/forgot-password'"
+                  >Forgot password?</a
+                >
+              </div>
+              <div class="form-group">
+                <button
+                  class="btn btn-primary d-block w-100"
+                  [disabled]="!loginForm.valid"
+                  (click)="login()"
+                  type="button"
+                >
+                  <span>Sign In</span>
+                </button>
+              </div>
+              <div class="login-social-title">
+                <h3>Or Sign in with</h3>
+              </div>
+              <div class="form-group">
+                <ul class="login-social">
+                  <li>
+                    <a href="https://www.linkedin.com" target="_blank"
+                      ><app-feather-icons
+                        [icon]="'linkedin'"
+                      ></app-feather-icons
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com" target="_blank"
+                      ><app-feather-icons [icon]="'twitter'"></app-feather-icons
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com" target="_blank"
+                      ><app-feather-icons
+                        [icon]="'facebook'"
+                      ></app-feather-icons
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com" target="_blank"
+                      ><app-feather-icons
+                        [icon]="'instagram'"
+                      ></app-feather-icons
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <p class="mt-4 mb-0 text-center">
+                Don't have account?<a
+                  class="ms-2"
+                  [routerLink]="'/authentication/register/register-simple'"
+                  >Create Account</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

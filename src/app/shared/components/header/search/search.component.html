@@ -1,0 +1,93 @@
+  <li>
+    <div class="right-header ps-0">
+  <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text mobile-search" 
+        ><i class="fa fa-search"></i
+      ></span>
+    </div>
+
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Search Here........"
+      [(ngModel)]="text"
+      [ngModelOptions]="{ standalone: true }"
+      (keyup)="searchTerm(text)"
+      autocomplete="off"
+     />
+     
+  </div>
+  <div
+    class="Typeahead-menu custom-scrollbar"
+    [class.is-open]="searchResult"
+    *ngIf="menuItems?.length"
+    id="search-outer"
+    [class.open]="open"
+
+  >
+    <div
+      class="ProfileCard u-cf"
+      *ngFor="let menuItem of menuItems | slice : 0 : 8"
+    >
+      <div class="ProfileCard-avatar">
+        <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
+      </div>
+      <div class="ProfileCard-details">
+        <div class="ProfileCard-realName">
+          <a
+            [routerLink]="menuItem?.path"
+            class="realname"
+            (click)="removeFix()"
+            >{{ menuItem?.title }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="Typeahead-menu"
+    [class.is-open]="searchResultEmpty"
+    [class.open]="open"
+  >
+    <div class="tt-dataset tt-dataset-0">
+      <div class="EmptyMessage">Opps!! There are no result found.</div>
+    </div>
+  </div>
+</div>
+</li>
+<li class="serchinput">
+  <div class="serchbox" (click)="openMenu()"><i data-feather="search"></i></div>
+  <div class="form-group search-form  "      [class.open]="open"
+  ><input type="text"  placeholder="Search Here........"
+  [(ngModel)]="text"
+  [ngModelOptions]="{ standalone: true }"
+  (keyup)="searchTerm(text)"placeholder="Search here..."></div>
+  <div
+  class="Typeahead-menu custom-scrollbar"
+  [class.is-open]="searchResult"
+  *ngIf="menuItems?.length"
+  id="search-outer"
+  [class.open]="open"
+
+>
+  <div
+    class="ProfileCard u-cf"
+    *ngFor="let menuItem of menuItems | slice : 0 : 8"
+  >
+    <div class="ProfileCard-avatar">
+      <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
+    </div>
+    <div class="ProfileCard-details">
+      <div class="ProfileCard-realName">
+        <a
+          [routerLink]="menuItem?.path"
+          class="realname"
+          (click)="removeFix()"
+          >{{ menuItem?.title }}</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+</li>
