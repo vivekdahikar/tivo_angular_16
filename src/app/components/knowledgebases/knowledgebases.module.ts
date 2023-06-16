@@ -10,6 +10,7 @@ import { AngularSvgIconModule } from "angular-svg-icon";
 import { SharedModule } from "src/app/shared/shared.module";
 import { FaqModule } from "../faq/faq.module";
 import { LearningModule } from "../learning/learning.module";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LearningModule } from "../learning/learning.module";
     SharedModule,
     FaqModule,
     LearningModule,
+    NgbModule
   ],
 })
 export class KnowledgebasesModule {}

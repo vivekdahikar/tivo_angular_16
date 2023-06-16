@@ -416,7 +416,6 @@ export class NavService {
       type: "sub",
       active: false,
       children: [
-        { path: "/bonus-ui/scrollable", title: "Scrollable", type: "link" },
         { path: "/bonus-ui/rating", title: "Rating", type: "link" },
         { path: "/bonus-ui/dropzone", title: "Dropzone", type: "link" },
         { path: "/bonus-ui/sweetAlert2", title: "SweetAlert2", type: "link" },

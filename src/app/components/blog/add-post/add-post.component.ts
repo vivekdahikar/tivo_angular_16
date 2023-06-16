@@ -20,12 +20,44 @@ export class AddPostComponent {
     { id: 2, name: 'Travel' },
   ];
   public selectedCategory: string[] = [];
-  public editor = ClassicEditor;
-
+  editor: any = ClassicEditor;
   public config = {
-    name: 'document',
-    groups: ['mode', 'document', 'doctools'],
-  };
+    toolbar: [
+      "undo",
+      "redo",
+      "|",
+      "heading",
+      "fontFamily",
+      "fontSize",
+      "|",
+      "bold",
+      "italic",
+      "underline",
+      "fontColor",
+      "fontBackgroundColor",
+      "highlight",
+      "|",
+      "link",
+      "CKFinder",
+      "imageUpload",
+      "mediaEmbed",
+      "|",
+      "alignment",
+      "bulletedList",
+      "numberedList",
+      "|",
+      "indent",
+      "outdent",
+      "|",
+      "insertTable",
+      "blockQuote",
+      "specialCharacters",
+    ],
+    language: "id",
+    image: {
+      toolbar: ["imageTextAlternative", "imageStyle:full", "imageStyle:side"],
+    },
+  }
 
   cities2 = [
     { id: 1, name: 'Vilnius' },

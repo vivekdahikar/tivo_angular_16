@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import {
   FaIconLibrary,
-  FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 import {
   faStar,
   faStarHalfAlt,
   faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons';
-import { faStar as farStar } from '@fortawesome/free-regular-svg-icons';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({

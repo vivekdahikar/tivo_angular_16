@@ -89,16 +89,19 @@ export class ContentComponent {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    if (window.location.pathname == "/page-layout/hide-nav-scroll") {
-      if (number > 600) {
-        this.show = true;
-      } else if (number === 0) {
-        this.show = true;
+  
+    if (window.location.pathname === "/page-layout/hide-nav-scroll") {
+      const scrollMaxY = window.scrollY || (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+      if (number >= scrollMaxY) {
+        this.show = false; // Hide the header
+      } else if (number > 600 || number === 0) {
+        this.show = true; // Show the header
       } else {
-        this.show = false;
+        this.show = false; // Hide the header
       }
     }
   }
+  
 
   prepareRoute(outlet: RouterOutlet) {
     return (

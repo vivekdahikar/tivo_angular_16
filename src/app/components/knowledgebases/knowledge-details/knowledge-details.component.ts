@@ -9,6 +9,8 @@ import * as filterData from '../../../shared/data/component/learning/learning';
 export class KnowledgeDetailsComponent {
   public isCollapsed = false;
   public isCollapsed2 = false;
+  public isCollapsed3 = false;
+
   public Categories = filterData.Categories;
   public upcomingCourses = filterData.upcomingCourses;
   constructor() {}
