@@ -138,13 +138,11 @@ export class SidebarComponent {
   }
 
   togglePined(itemId: number | undefined): void {
-    this.pined=!this.pined
-    
+    this.pined= true;
     if (itemId === undefined) {
       return;
     }
-
-    const index = this.pinedItemIds.indexOf(itemId);
+const index = this.pinedItemIds.indexOf(itemId);
     if (index !== -1) {
       this.pinedItemIds.splice(index, 1);
     } else {
