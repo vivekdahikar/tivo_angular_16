@@ -34,17 +34,23 @@
             <span>Back</span
             ><i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
           </div>
+       
         </li>
+           <li class="pin-title sidebar-list" [class.show]="pined">
+            <h6>Pinned</h6>
+          </li>
+            <hr>
+   
         <li class="menu-box">
           <ul>
+        
             <li
               [class]="
                 menuItem.headTitle1
                   ? 'sidebar-main-title'
-                  : 'sidebar-list hoverd '
-              "
+                  : 'sidebar-list' 
+              " [class.pined]="isPined(menuItem.id)"
               *ngFor="let menuItem of menuItems"
-              [ngClass]="{ active: menuItem.active }"
             >
               <a
                 class="sidebar-link sidebar-title custom-scrollbar"
@@ -56,7 +62,10 @@
               >
                 <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
                 <span>{{ menuItem.title | translate }}</span>
+   
                 <div class="according-menu">
+                  <i class="fa fa-thumb-tack"(click)="togglePined(menuItem.id)"
+                  ></i>
                   <i
                     class="fa fa-angle-{{
                       menuItem.active ? 'down' : 'right'
@@ -75,9 +84,11 @@
                 *ngIf="menuItem.type === 'link'"
               >
                 <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
-                <span (click)="close()">{{ menuItem.title | translate }}</span>
+                <span (click)="close()">{{ menuItem.title | translate }} <i class="fa fa-thumb-tack"(click)="togglePined(menuItem.id)"
+                  ></i></span>
+          
                 <div class="according-menu">
-                  <i
+                 <i
                     class="fa fa-angle-{{
                       menuItem.active ? 'down' : 'right'
                     }} pull-right"
@@ -96,6 +107,8 @@
                 <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
                 <span>{{ menuItem.title | translate }}</span>
                 <div class="according-menu">
+                    <i class="fa fa-thumb-tack" (click)="togglePined(menuItem.id)"
+                  ></i>
                   <i
                     class="fa fa-angle-{{
                       menuItem.active ? 'down' : 'right'

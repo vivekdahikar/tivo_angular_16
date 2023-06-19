@@ -14,6 +14,7 @@ export interface Menu {
   badgeValue?: string;
   active?: boolean;
   bookmark?: boolean;
+  id? :number;
   children?: Menu[];
 }
 @Injectable({
@@ -72,6 +73,7 @@ export class NavService {
   MENUITEMS: Menu[] = [
     {
       title: "Dashboards",
+      id : 1,
       icon: "home",
       type: "sub",
       badgeType: "light-primary",
@@ -86,6 +88,8 @@ export class NavService {
       title: "Widgets",
       icon: "airplay",
       type: "sub",
+      id : 2,
+
       active: false,
       children: [
         { path: "/widgest/general", title: "General", type: "link" },
@@ -93,6 +97,7 @@ export class NavService {
       ],
     },
     {
+      id : 3,
       title: "Page layout",
       icon: "layout",
       type: "sub",
@@ -121,6 +126,7 @@ export class NavService {
       ],
     },
     {
+      id : 4,
       title: "Project",
       icon: "box",
       type: "sub",
@@ -133,6 +139,7 @@ export class NavService {
       ],
     },
     {
+      id : 5,
       path: "/file-manager",
       title: "File Manager",
       icon: "git-pull-request",
@@ -140,6 +147,7 @@ export class NavService {
       active: false,
     },
     {
+      id : 6,
       title: "E-Commerce",
       icon: "shopping-bag",
       type: "sub",
@@ -174,6 +182,7 @@ export class NavService {
       ],
     },
     {
+      id : 7,
       title: "Email",
       icon: "mail",
       type: "sub",
@@ -185,6 +194,7 @@ export class NavService {
       ],
     },
     {
+      id : 8,
       title: "Chat",
       icon: "message-square",
       type: "sub",
@@ -195,6 +205,7 @@ export class NavService {
       ],
     },
     {
+      id : 9,
       title: "Users",
       icon: "users",
       type: "sub",
@@ -205,9 +216,11 @@ export class NavService {
         { path: "/users/users-cards", title: "Users Cards", type: "link" },
       ],
     },
-    { path: "/bookmark", title: "Bookmark", icon: "heart", type: "link" },
+    { 
+      id : 10,path: "/bookmark", title: "Bookmark", icon: "heart", type: "link" },
 
     {
+      id : 11,
       path: "/contacts",
       title: "Contacts",
       icon: "list",
@@ -215,6 +228,7 @@ export class NavService {
       bookmark: true,
     },
     {
+      id : 12,
       path: "/task",
       title: "Task",
       icon: "check-square",
@@ -222,9 +236,12 @@ export class NavService {
       bookmark: true,
     },
 
-    { path: "/calender", title: "Calender", icon: "calendar", type: "link" },
-    { path: "/social-app", title: "Social App", icon: "zap", type: "link" },
+    { 
+      id : 13,path: "/calender", title: "Calender", icon: "calendar", type: "link" },
     {
+      id : 14, path: "/social-app", title: "Social App", icon: "zap", type: "link" },
+    {
+      id : 15,
       path: "/to-do",
       title: "To-Do",
       icon: "clock",
@@ -232,12 +249,14 @@ export class NavService {
       bookmark: true,
     },
     {
+      id : 16,
       path: "/search-website",
       title: "Search Result",
       icon: "search",
       type: "link",
     },
     {
+      id : 17,
       title: "Forms",
       icon: "sliders",
       type: "sub",
@@ -276,6 +295,7 @@ export class NavService {
           ],
         },
         {
+          id : 18,
           title: "Form Widgets",
           type: "sub",
           active: false,
@@ -320,6 +340,7 @@ export class NavService {
           ],
         },
         {
+          id : 19,
           title: "Form Layout",
           type: "sub",
           active: false,
@@ -349,6 +370,7 @@ export class NavService {
       ],
     },
     {
+      id : 20,
       title: "Tables",
       icon: "server",
       type: "sub",
@@ -367,6 +389,7 @@ export class NavService {
       ],
     },
     {
+      id : 21,
       title: "Ui Kits",
       icon: "box",
       type: "sub",
@@ -411,6 +434,7 @@ export class NavService {
       ],
     },
     {
+      id : 22,
       title: "Bonus Ui",
       icon: "folder-plus",
       type: "sub",
@@ -436,6 +460,7 @@ export class NavService {
       ],
     },
     {
+      id : 23,
       title: "Icons",
       icon: "command",
       type: "sub",
@@ -451,6 +476,7 @@ export class NavService {
     },
 
     {
+      id : 24,
       title: "Buttons",
       icon: "cloud",
       type: "sub",
@@ -465,6 +491,7 @@ export class NavService {
       ],
     },
     {
+      id : 25,
       path: "/charts",
       title: "Charts",
       icon: "bar-chart",
@@ -481,12 +508,14 @@ export class NavService {
       ],
     },
     {
+      id : 26,
       path: "/sample-page",
       title: "Sample Page",
       icon: "file-text",
       type: "link",
     },
     {
+      id : 27,
       title: "Others",
       icon: "layers",
       type: "sub",
@@ -519,6 +548,7 @@ export class NavService {
           ],
         },
         {
+          id : 28,
           title: "Authentication",
           type: "sub",
           active: false,
@@ -591,6 +621,7 @@ export class NavService {
           ],
         },
         {
+          id : 29,
           title: "Coming Soon",
           type: "sub",
           active: false,
@@ -608,6 +639,7 @@ export class NavService {
           ],
         },
         {
+          id : 30,
           title: "Email templates",
           type: "sub",
           active: false,
@@ -642,6 +674,7 @@ export class NavService {
       ],
     },
     {
+      id : 31,
       path: "/gallery",
       title: "Gallery",
       icon: "image",
@@ -672,6 +705,7 @@ export class NavService {
       ],
     },
     {
+      id : 32,
       path: "/blog",
       title: "Blog",
       icon: "film",
@@ -685,6 +719,7 @@ export class NavService {
     },
     { path: "/faq", title: "Faq", icon: "help-circle", type: "link" },
     {
+      id : 33,
       path: "/job-search",
       title: "Job Search",
       icon: "package",
@@ -698,6 +733,7 @@ export class NavService {
       ],
     },
     {
+      id : 34,
       path: "/learning",
       title: "Learning",
       icon: "radio",
@@ -717,6 +753,7 @@ export class NavService {
       ],
     },
     {
+      id : 35,
       path: "/maps",
       title: "Maps",
       icon: "calendar",
@@ -728,6 +765,7 @@ export class NavService {
       ],
     },
     {
+      id : 36,
       path: "/editors",
       title: "Editors",
       icon: "git-pull-request",
@@ -743,6 +781,7 @@ export class NavService {
       ],
     },
     {
+      id : 37,
       path: "/knowledgebases",
       title: "Knowledgebase",
       icon: "database",
@@ -767,6 +806,7 @@ export class NavService {
       ],
     },
     {
+      id : 38,
       path: "/support-ticket",
       title: "Support Ticket",
       icon: "headphones",

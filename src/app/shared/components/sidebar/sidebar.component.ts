@@ -16,6 +16,8 @@ export class SidebarComponent {
   public width: any = window.innerWidth;
   public leftArrowNone: boolean = true;
   public rightArrowNone: boolean = false;
+  public pined: boolean = false;
+  public pinedItemIds: number[] = []; // Specify the ids of the menu items you want to pin
 
   constructor(
     private navService: NavService,
@@ -128,6 +130,25 @@ export class SidebarComponent {
     } else {
       this.leftArrowNone = false;
       this.margin += -this.width;
+    }
+  }
+
+  isPined(itemId: number | undefined): boolean {
+    return itemId !== undefined && this.pinedItemIds.includes(itemId);
+  }
+
+  togglePined(itemId: number | undefined): void {
+    this.pined=!this.pined
+    
+    if (itemId === undefined) {
+      return;
+    }
+
+    const index = this.pinedItemIds.indexOf(itemId);
+    if (index !== -1) {
+      this.pinedItemIds.splice(index, 1);
+    } else {
+      this.pinedItemIds.push(itemId);
     }
   }
 }

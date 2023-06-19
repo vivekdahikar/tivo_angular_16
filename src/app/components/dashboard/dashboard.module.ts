@@ -14,7 +14,7 @@ import { TotalAppointmentComponent } from "./default/total-appointment/total-app
 import { TotalEarningComponent } from "./default/total-earning/total-earning.component";
 import { UsersByCountryComponent } from "./default/users-by-country/users-by-country.component";
 import { TotalGrowthComponent } from "./default/total-growth/total-growth.component";
-import { RecentActivityComponent } from "./default/recent-activity/recent-activity.component";
+
 import { ChatWithUserComponent } from "./default/chat-with-user/chat-with-user.component";
 import { ToDoComponent } from "./default/to-do/to-do.component";
 import { ChartistModule } from "ng-chartist";
@@ -29,6 +29,9 @@ import { OrderListComponent } from "./ecommerce/order-list/order-list.component"
 import { CarouselModule } from "ngx-owl-carousel-o";
 import { LeafletModule } from "@asymmetrik/ngx-leaflet";
 import { HttpClientModule } from "@angular/common/http";
+import { RecentActivityComponent } from "./default/recent-activity/recent-activity.component";
+import { ActivityComponent } from "./ecommerce/activity/activity.component";
+
 
 @NgModule({
   declarations: [
@@ -42,6 +45,7 @@ import { HttpClientModule } from "@angular/common/http";
     TotalEarningComponent,
     UsersByCountryComponent,
     TotalGrowthComponent,
+    ActivityComponent,
     RecentActivityComponent,
     ChatWithUserComponent,
     ToDoComponent,
