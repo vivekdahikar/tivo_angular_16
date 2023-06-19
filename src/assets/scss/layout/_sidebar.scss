@@ -1586,6 +1586,109 @@
     }
   }
 }
+.page-wrapper{
+  &.compact-wrapper{
+    .page-body-wrapper{
+      div.sidebar-wrapper{
+        .sidebar-main{
+          #sidebar-menu{
+            .sidebar-links{
+              .pin-title.sidebar-list{
+                padding: 12px 22px;
+                transition: all 0.5s ease;
+                display: none;
+                h6{
+                  color: $white;
+                  margin-bottom: 0;
+                  text-transform: uppercase;
+                }
+              }
+              ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                  a{
+                    &.link-nav{
+                      i.fa-thumb-tack{
+                        top: 20px;
+                        right: 40px;
+                      }
+                    }
+                  }
+                  &.sidebar-list{
+                    position: relative;
+                    &.pined, &.pin-title{
+                      order: -1;
+                      i.fa-thumb-tack{
+                        transform: rotate(45deg);
+                      }
+                    }
+                    i.fa-thumb-tack{
+                      visibility: hidden;
+                      position: absolute;
+                      top: 2px;
+                      right: 15px;
+                      color: $primary-color !important;
+                      z-index: 999;
+                    }
+                    &:hover{
+                      i.fa-thumb-tack{
+                        visibility: visible;
+                        cursor: pointer;
+                      }
+                    }
+                  }
+                  &.sidebar-list.pined{
+                    &:last-child{
+                      border-bottom: 1px solid gray;
+                      padding-bottom: 25px;
+                      margin-bottom: 25px;
+                    }
+                  }
+                  &.pin-title.sidebar-list{
+                    display: none;
+                    transition: all 0.5s ease;
+                    ~ hr{
+                      display: none;
+                    }
+                    &.show{
+                      display: block;
+                      transition: all 0.5s ease;
+                      ~ hr{
+                        display: block;
+                        background-color: rgba($white, 0.09);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.horizontal-wrapper{
+    .page-body-wrapper{
+      .sidebar-wrapper{
+        .sidebar-main{
+          #sidebar-menu{
+            .sidebar-links{
+              li {
+                i.fa-thumb-tack{
+                  display: none;
+                }
+                ~ hr, &.pin-title{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @keyframes pagebody {
   from {
     opacity: 0;
