@@ -22,6 +22,9 @@ th {
     color: $danger-color;
   }
 }
+.table > :not(caption) > * > * {
+  background-color: transparent;
+}
 .table {
   margin-bottom: $table-b-margin;
   > :not(:last-child) {

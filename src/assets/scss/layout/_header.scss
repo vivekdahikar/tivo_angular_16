@@ -75,16 +75,19 @@
   }
 }
 /*=======Mega menu css start=======*/
+.search-header-item{
+  position: relative;
+  margin-right: 20px;
+  [dir="rtl"] & {
+    margin-right: unset;
+    margin-left: 20px;
+  }
+}
 .right-header{
   .Typeahead-menu{
     height: 250px;
     overflow-y: auto;
     width: 255px;
-    left: 40px;
-    [dir="rtl"] & {
-      left: unset;
-      right: 40px;
-    }
   }
   .input-group {
     padding: 5px 15px;

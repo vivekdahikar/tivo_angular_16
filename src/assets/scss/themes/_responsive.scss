@@ -902,7 +902,9 @@
     .left-menu-header {
       ul.header-left {
         li {
-          padding-left: 20px;
+          &:nth-child(2), &:nth-child(3){
+            padding-left: 20px;
+          }
         }
       }
     }
@@ -1271,14 +1273,6 @@
       .left-header {
         flex: 0 0 45%;
         max-width: 45%;
-      }
-      .page-header {
-        .header-wrapper {
-          .nav-right {
-            flex: 0 0 55%;
-            max-width: 55%;
-          }
-        }
       }
     }
     &.horizontal-wrapper {
@@ -1811,6 +1805,14 @@
   }
 }
 @media only screen and (max-width: 1199px) {
+  .serchinput{
+    .search-form{
+      top: 50px;
+    }
+    .Typeahead-menu{
+      top: 90px;
+    }
+  }
   .basic-cards{
     .custom-card{
       .card-header{
@@ -2781,10 +2783,6 @@
       }
     }
     &.compact-wrapper {
-      .left-header {
-        flex: 0 0 60%;
-        max-width: 60%;
-      }
       .page-header {
         .header-wrapper {
           .nav-right {
@@ -3695,6 +3693,9 @@
 @media only screen and (max-width: 767px) {
   ngx-dropzone{
     padding: 20px;
+  }
+  .serchinput{
+    margin-right: 0;
   }
   .kanban-board {
     width: calc(100% / 1 - 30px) !important;
@@ -4909,14 +4910,6 @@
     .page-body-wrapper {
       .page-title {
         padding-bottom: 20px;
-      }
-    }
-    .page-header {
-      .header-wrapper {
-        .nav-right {
-          flex: 0 0 70%;
-          max-width: 70%;
-        }
       }
     }
   }
@@ -6591,6 +6584,15 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .serchinput{
+    .search-form{
+      top: 42px;
+    }
+    .Typeahead-menu{
+      top: 75px;
+      right: -150px;
+    }
+  }
   .image-cropper-btn{
     input.btn{
       width: 240px;

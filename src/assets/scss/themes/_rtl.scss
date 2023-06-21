@@ -49,6 +49,12 @@ html[dir="rtl"]{
       border-radius: 0 !important;
     }
   }
+  .serchinput{
+    .Typeahead-menu{
+      right: unset;
+      left: -50px;
+    }
+  }
   .todo-wrap{
     .card-header{
       .todo-list-header{
@@ -6147,8 +6153,10 @@ html[dir="rtl"]{
       .left-menu-header {
         ul.header-left {
           li{
-            padding-right: 20px;
-            padding-left: unset;
+            &:nth-child(2), &:nth-child(3){
+              padding-right: 20px;
+              padding-left: unset;
+            }
             ul.onhover-show-div{
               li{
                 padding: 6px 25px;
@@ -7423,6 +7431,12 @@ html[dir="rtl"]{
     }
   }
   @media only screen and (max-width: 480px) {
+    .serchinput{
+      .Typeahead-menu{
+        right: unset;
+        left: -150px;
+      }
+    }
     .page-wrapper{
       .page-header{
         .header-wrapper{
