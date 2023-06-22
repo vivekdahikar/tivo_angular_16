@@ -91,6 +91,26 @@
 .maximize{
   cursor: pointer;
 }
+.serchinput{
+  padding: 6px 10px;
+  margin-right: 8px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  &:hover{
+    background-color: $primary-color;
+    .serchbox{
+      svg{
+        stroke: $white !important;
+      }
+    }
+  }
+  .Typeahead-menu{
+    right: -50px;
+    left: unset;
+    top: 100px;
+  }
+}
 .page-wrapper {
   position: relative;
   .page-header {
@@ -105,7 +125,7 @@
       width: 100%;
       display: flex;
       align-items: center;
-      padding: $header-wrapper-padding;
+      padding: 23px 30px;
       position: relative;
       .left-header {
         .left-menu-header {

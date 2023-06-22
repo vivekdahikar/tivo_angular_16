@@ -1,6 +1,7 @@
-  <div class="container-fluid dropdown-page">
+<app-breadcrumb [title]="'Dropdown'" [items]="['Ui Kits']" [active_item]="'Dropdown'"></app-breadcrumb>
+<div class="container-fluid dropdown-page">
             <div class="row">
-              <div class="col-sm-12 col-xl-12">
+              <div class="col-lg-6">
                 <div class="card basic-dropdown">
                   <div class="card-header pb-0">
                     <h4>Dropdown with link</h4>
@@ -30,7 +31,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-xl-12">
+              <div class="col-lg-6">
                 <div class="card">
                   <div class="card-header pb-0">
                     <h4>Basic Dropdown with Color</h4>
@@ -54,7 +55,41 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-xl-12">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header pb-0">
+                    <h4>Dropdown With Direction</h4><span>Use a class <code>.drop-up</code></span>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="dropup-basic dropdown-basic">
+                      <div class="dropup dropdown me-3">
+                        <button class="dropbtn btn-pill btn-secondary" type="button">Drop up <span><i class="icofont icofont-arrow-up"></i></span></button>
+                        <div class="dropup-content dropdown-content"><a href="#">Bookmark</a><a href="#">Contact</a></div>
+                      </div>
+                      <div class="dropend dropdown me-3">
+                        <button class="dropbtn btn-pill btn-danger" type="button" data-bs-toggle="dropdown">Drop End <span><i class="icofont icofont-arrow-right"></i></span></button>
+                        <div class="dropend-content dropdown-content"><a href="#">Task</a><a href="#">Calendar</a></div>
+                      </div>
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header pb-0">
+                    <h4>Dropdown With Divider</h4><span>Use a class </span>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="dropdown-basic">
+                      <div class="dropdown">
+                        <button class="dropbtn btn-pill btn-primary" type="button">Dropdown Button <span><i class="icofont icofont-arrow-down"></i></span></button>
+                        <div class="dropdown-content"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a><a href="#">Another Link</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
                 <div class="card">
                   <div class="card-header pb-0">
                     <h4>Dropdown Split Button</h4>
@@ -83,6 +118,36 @@
                         </div>
                       </div>
                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header pb-0">
+                    <h4>Rounded Dropdown</h4>
+                  </div>
+                  <div class="card-body"> 
+                    <div class="dropdown-basic">
+                      <div class="dropdown">
+                        <div class="btn-group mb-0">
+                          <button class="dropbtn btn-primary btn-round" type="button">Primary Button <span><i class="icofont icofont-arrow-down"></i></span></button>
+                          <div class="dropdown-content"><a href="#">Action</a><a href="#">Another Action</a><a href="#">Something Else Here</a><a href="#">Separated Link </a></div>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <div class="btn-group mb-0">
+                          <button class="dropbtn btn-secondary btn-round" type="button">Secondary Button <span><i class="icofont icofont-arrow-down"></i></span></button>
+                          <div class="dropdown-content"><a href="#">Action</a><a href="#">Another Action</a><a href="#">Something Else Here</a><a href="#">Separated Link </a></div>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <div class="btn-group mb-0">
+                          <button class="dropbtn btn-success btn-round" type="button">Success Button <span><i class="icofont icofont-arrow-down"></i></span></button>
+                          <div class="dropdown-content"><a href="#">Action</a><a href="#">Another Action</a><a href="#">Something Else Here</a><a href="#">Separated Link </a></div>
+                        </div>
+                      </div>
+                   
+                    </div>
                   </div>
                 </div>
               </div>
