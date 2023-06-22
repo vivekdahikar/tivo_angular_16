@@ -138,15 +138,22 @@ export class SidebarComponent {
   }
 
   togglePined(itemId: number | undefined): void {
-    this.pined= true;
     if (itemId === undefined) {
       return;
     }
+    
     const index = this.pinedItemIds.indexOf(itemId);
     if (index !== -1) {
       this.pinedItemIds.splice(index, 1);
     } else {
       this.pinedItemIds.push(itemId);
     }
+  
+    if (this.pinedItemIds.length === 0) {
+      this.pined = false;
+    } else {
+      this.pined = true;
+    }
   }
+  
 }

@@ -59,7 +59,8 @@
 <li class="serchinput">
   <div class="serchbox" (click)="openMenu()"><i data-feather="search"></i></div>
   <div class="form-group search-form  "      [class.open]="open"
-  ><input type="text"  placeholder="Search Here........"
+  >
+  <input type="text"  placeholder="Search Here........"
   [(ngModel)]="text"
   [ngModelOptions]="{ standalone: true }"
   (keyup)="searchTerm(text)"placeholder="Search here..."></div>

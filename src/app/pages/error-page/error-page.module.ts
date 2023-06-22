@@ -20,7 +20,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     CommonModule,
     ErrorPageRoutingModule,
     SharedModule,
-    AngularSvgIconModule.forRoot(),
+    AngularSvgIconModule,
   ],
 })
 export class ErrorPageModule {}
