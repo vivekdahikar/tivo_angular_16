@@ -25,6 +25,8 @@ export class SearchComponent {
   // }
   openMenu() {
     this.open = !this.open;
+    this.searchResult=!this.searchResult
+
   }
 
   searchTerm(term: any) {
