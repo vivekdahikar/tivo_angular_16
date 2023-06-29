@@ -762,6 +762,16 @@
                         transition: all 0.3s ease;
                       }
                     }
+                    ul.sidebar-submenu{
+                      display: block !important;
+                      visibility: visible;
+                      opacity: 1;
+                      li{
+                        a{
+                          color: $theme-body-font-color;
+                        }
+                      }
+                    }
                   }
                   > a {
                     display: block;
