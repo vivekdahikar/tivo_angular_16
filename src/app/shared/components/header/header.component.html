@@ -39,7 +39,8 @@
           class="mode"
           (click)="layoutToggle()"
           [ngClass]="dark ? 'dark-only' : ''"
-        >
+        > 
+        <!-- <a [routerLink]="['/']" [queryParams]="{layout : 'light-only'}"></a> -->
           <i class="fa" [ngClass]="dark ? 'fa-lightbulb-o' : 'fa-moon-o'"></i>
         </div>
       </li>
