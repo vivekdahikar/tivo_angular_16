@@ -341,6 +341,15 @@ body {
                           }
                         }
                       }
+                      &:hover{
+                        ul.sidebar-submenu{
+                          li{
+                            a{
+                              color: $dark-all-font-color;
+                            }
+                          }
+                        }
+                      }
                     } 
                   } 
                 } 
