@@ -19,10 +19,7 @@ export class SearchComponent {
     this.navServices.items.subscribe((menuItems) => (this.items = menuItems));
   }
 
-  // searchToggle() {
-  //   this.navServices.search = false;
-  //   document.getElementsByTagName("body")[0].classList.remove("offcanvas");
-  // }
+
   openMenu() {
     this.open = !this.open;
     this.searchResult=!this.searchResult
